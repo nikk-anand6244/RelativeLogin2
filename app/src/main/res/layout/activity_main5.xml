@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity5">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/transparent"
+        app:cardElevation="50dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bottomroundcard"
+
+            >
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_Up"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="80dp"
+                android:layout_marginBottom="10dp"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/log_in"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_toEndOf="@+id/tv1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="120dp"
+                android:layout_marginBottom="10dp"
+
+                />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_back"
+        android:layout_below="@+id/cv1"
+        android:textSize="28sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="15dp"
+        app:cardElevation="15dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:autofillHints="emailAddress"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/emailicon"
+            android:drawablePadding="12dp"
+            android:hint="@string/email"
+            android:inputType="text"
+            android:textColorHint="#757575"
+            tools:ignore="VisualLintTextFieldSize" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv2"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="15dp"
+        app:cardElevation="15dp"
+        >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:autofillHints="password"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:layout_marginEnd="15dp"
+                android:drawableStart="@drawable/lockicon"
+                android:drawableEnd="@drawable/hide"
+                android:drawablePadding="12dp"
+                android:background="@android:color/transparent"
+                tools:ignore="VisualLintTextFieldSize" />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remember_password"
+        android:textSize="18sp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/cv3"
+        />
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv4"
+        android:layout_below="@id/cv3"
+        android:text="@string/forgot_password"
+        android:layout_marginStart="70dp"
+        android:textSize="18sp"
+        android:textColor="#B71C1C"
+        />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/tv4"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#1A237E"
+        android:elevation="50dp"
+        android:text="@string/sign_Up"
+        android:textSize="20sp"
+        tools:ignore="DuplicateSpeakableTextCheck,VisualLintButtonSize" />
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/or_log_in_with"
+        android:layout_below="@+id/bt1"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Google"
+        android:textColor="#031838"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tv6"
+        android:drawableStart="@drawable/googleicon"
+        android:backgroundTint="#ffffff"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btncorner"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/facebook"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/tv6"
+        android:drawableStart="@drawable/facebookicon"
+        android:layout_toEndOf="@+id/bt2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#1A237E"
+        android:drawablePadding="10dp"
+        android:background="@drawable/btncorner"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        app:cardElevation="50dp"
+        android:background="@android:color/transparent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/toproundcard"
+            />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
