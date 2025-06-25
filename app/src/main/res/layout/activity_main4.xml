@@ -5,13 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity4">
 
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv1"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         app:cardElevation="50dp"
         app:cardBackgroundColor="@android:color/transparent"
 
@@ -22,6 +23,14 @@
             android:background="@drawable/bottomroundcard"
 
             >
+            <Button
+                android:id="@+id/bt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/arrow"
+                android:textSize="30sp"
+                android:textColor="#ffffff"
+                android:background="@android:color/transparent"/>
             <TextView
                 android:id="@+id/tv1"
                 android:layout_width="wrap_content"
@@ -37,6 +46,7 @@
 
                 />
             <TextView
+                android:id="@+id/tv7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/log_in"
@@ -73,6 +83,7 @@
         android:layout_marginEnd="15dp"
         android:layout_marginTop="15dp"
         app:cardElevation="15dp"
+        app:cardBackgroundColor="@color/white"
         >
 
 
@@ -99,6 +110,7 @@
         app:cardCornerRadius="12dp"
         android:layout_margin="15dp"
         app:cardElevation="15dp"
+        app:cardBackgroundColor="@color/white"
         >
 
 
@@ -126,6 +138,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginBottom="15dp"
         app:cardElevation="15dp"
+        app:cardBackgroundColor="@color/white"
 
         >
 
@@ -148,7 +161,7 @@
     <Button
         android:id="@+id/bt1"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:layout_below="@+id/cv4"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
@@ -156,6 +169,7 @@
         android:elevation="50dp"
         android:text="@string/sign_Up"
         android:textSize="20sp"
+        android:textColor="@color/white"
         tools:ignore="DuplicateSpeakableTextCheck,VisualLintButtonSize" />
     <TextView
         android:id="@+id/tv3"
@@ -186,7 +200,7 @@
         />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt3"
-        android:layout_width="150dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:text="@string/facebook"
         android:textSize="18sp"
@@ -195,7 +209,7 @@
         android:layout_below="@+id/tv3"
         android:drawableStart="@drawable/facebookicon"
         android:layout_toEndOf="@+id/bt2"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#1A237E"
         android:drawablePadding="10dp"
@@ -206,11 +220,13 @@
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         app:cardElevation="50dp"
+        app:cardBackgroundColor="@color/white"
         >
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/toproundcard"
+            app:cardBackgroundColor="@android:color/transparent"
             />
     </androidx.cardview.widget.CardView>
 

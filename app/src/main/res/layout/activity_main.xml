@@ -16,7 +16,7 @@
         android:textSize="40sp"
         android:textStyle="bold"
         android:textColor="#ffffff"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:layout_marginStart="30dp"/>
     <TextView
         android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="530dp"
+        android:layout_height="550dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/toproundedcard"
         tools:ignore="TextSizeCheck">
@@ -100,7 +100,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/et2"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="20dp"
             android:text="@string/forgot_password"
             android:textColor="#B71C1C"
@@ -113,7 +113,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv5"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/gradient2"
             android:padding="12dp"
             android:text="@string/sign_in"
@@ -128,13 +128,14 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/btn1"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="20dp"
             android:text="@string/don_t_have_account"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <Button
+            android:id="@+id/btn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv6"

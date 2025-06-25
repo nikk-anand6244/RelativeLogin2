@@ -31,4 +31,5 @@
     <string name="or_log_in_with">--------Or Log in with--------</string>
     <string name="Google">Google</string>
     <string name="remember_password">Remember password</string>
+    <string name="arrow"><![CDATA[<-]]></string>
 </resources>

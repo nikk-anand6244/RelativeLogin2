@@ -13,16 +13,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/create_your"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="#ffffff"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="30dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/account"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:layout_below="@+id/tv1"
@@ -37,7 +37,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="540dp"
+        android:layout_height="610dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/toproundedcard"
         tools:ignore="TextSizeCheck">
@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="40dp"
             android:text="@string/full_name"
             android:textColor="#B71C1C"
             android:textSize="20sp"
@@ -64,7 +64,6 @@
             android:drawableEnd="@drawable/tickmark"
             android:hint="@string/nikhil_anand"
             android:inputType="textPersonName"
-            android:minHeight="48dp"
             android:textColorHint="#757575"
             tools:ignore="VisualLintTextFieldSize" />
 
@@ -92,7 +91,6 @@
             android:drawableEnd="@drawable/tickmark"
             android:hint="@string/abc_gmail_com"
             android:inputType="textEmailAddress"
-            android:minHeight="48dp"
             android:textColorHint="#757575"
             tools:ignore="VisualLintTextFieldSize" />
 
@@ -119,7 +117,6 @@
             android:drawableEnd="@drawable/hide"
             android:hint="@string/star"
             android:inputType="textPassword"
-            android:minHeight="48dp"
             tools:ignore="VisualLintTextFieldSize,DuplicateSpeakableTextCheck" />
 
         <TextView
@@ -145,7 +142,6 @@
             android:drawableEnd="@drawable/hide"
             android:hint="@string/star"
             android:inputType="textPassword"
-            android:minHeight="48dp"
             tools:ignore="VisualLintTextFieldSize" />
 
 
@@ -157,7 +153,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/et4"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/gradient2"
             android:padding="12dp"
             android:text="@string/Sign_up"
@@ -171,13 +167,14 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/btn1"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="20dp"
             android:text="@string/if_have_account"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <Button
+            android:id="@+id/btn3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv8"
