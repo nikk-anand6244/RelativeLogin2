@@ -11,6 +11,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity2 : AppCompatActivity() {
     private var btn: Button?=null
+    private var btn2: Button?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -20,23 +21,24 @@ class MainActivity2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        btn=findViewById(R.id.btn1)
+        btn = findViewById(R.id.btn1)
         btn?.setOnClickListener {
-            Toast.makeText( this,"Login Screen", Toast.LENGTH_SHORT).show()
-            val intent= Intent(this,MainActivity::class.java)
+            Toast.makeText(this, "Login Screen", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-        btn=findViewById(R.id.btArrow)
+        btn = findViewById(R.id.btArrow)
         btn?.setOnClickListener {
-            Toast.makeText( this,"Next UI Screen", Toast.LENGTH_SHORT).show()
-            val intent= Intent(this,MainActivity4::class.java)
+            Toast.makeText(this, "Next UI Screen", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, MainActivity4::class.java)
             startActivity(intent)
-        btn=findViewById(R.id.btn2)
-        btn?.setOnClickListener {
-            Toast.makeText( this,"Signup Screen", Toast.LENGTH_SHORT).show()
-            val intent= Intent(this,MainActivity::class.java)
-            startActivity(intent)
+            btn = findViewById(R.id.btn2)
+            btn?.setOnClickListener {
+                Toast.makeText(this, "Signup Screen", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 }
-}
+
